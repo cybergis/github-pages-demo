@@ -21,7 +21,7 @@ Sphinx can use markdown and ReSTructured Text. We will focus on ReSTructured tex
 
    .. code-block::
 
-    `My Text <https://www.google.com/>`
+    `My Text <https://www.google.com/>`_
 
 
    The above link looks like this: `My Text <https://www.google.com/>`_ Try adding a link to your index.rst page.
