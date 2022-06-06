@@ -14,6 +14,8 @@ Creating Github Pages for Code
 .. |Deploy| image:: https://github.com/cybergis/github-pages-demo/actions/workflows/pages/pages-build-deployment/badge.svg
     :target: https://github.com/cybergis/github-pages-demo/actions/workflows/pages/pages-build-deployment
 
+The `Github repository can be found here <https://github.com/cybergis/github-pages-demo>`_.
+
 **Author:** `Alexander Michels <https://alexandermichels.github.io/>`_
 
 It's increasingly common for software and projects to have documentation sites with auto-generated docs and/or examples using Jupyter notebooks. Some examples include:
