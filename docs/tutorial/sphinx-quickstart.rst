@@ -3,6 +3,10 @@ Sphinx-Quickstart
 
 First, we are going to setup the basics with the ``sphinx-quickstart`` command. `The Sphinx "Getting Started" page <https://www.sphinx-doc.org/en/master/usage/quickstart.html>`_ offers more details beyong this walkthrough.
 
+.. note::
+   
+   **Before you start,** please setup a Github account, an environment with Git and `Sphinx installed <https://www.sphinx-doc.org/en/master/usage/installation.html>`_ and have some kind of Python package management software. I recommend `venv <https://docs.python.org/3/library/venv.html>`_ or `conda <https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html>`_. The tutorial assumes you have Sphinx installed and some way to install Python packages.
+
 .. warning:: 
     Unfortunately, Sphinx pages don't seem to work completely on JupyterHub or Jupyterlab so I recommend doing this work locally. Jupyterlab seems to work for individual simple pages (hence the screenshots below), but not in general.
 
