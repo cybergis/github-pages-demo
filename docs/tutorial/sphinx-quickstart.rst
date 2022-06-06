@@ -76,6 +76,7 @@ Create a file called "requirements.txt" in `docs/` and copy/paste the following:
     geopandas>=0.9.0
     ipython
     ipython_genutils
+    ipywidgets
     markupsafe==2.0.1
     myst-parser
     nbsphinx
