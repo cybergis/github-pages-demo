@@ -6,10 +6,8 @@
 Creating Github Pages for Code
 ==============================
 
-|SphinxBuild| |Deploy|
+|Deploy|
 
-.. |SphinxBuild| image:: https://github.com/cybergis/github-pages-demo/actions/workflows/SphinxBuild.yml/badge.svg
-    :target: https://github.com/cybergis/github-pages-demo/actions/workflows/SphinxBuild.yml
 
 .. |Deploy| image:: https://github.com/cybergis/github-pages-demo/actions/workflows/pages/pages-build-deployment/badge.svg
     :target: https://github.com/cybergis/github-pages-demo/actions/workflows/pages/pages-build-deployment

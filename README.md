@@ -3,7 +3,6 @@
 [![the site](https://img.shields.io/badge/visit-the%20site-blueviolet)](https://cybergis.github.io/github-pages-demo/)
 
 
-[![Sphinx build](https://github.com/cybergis/github-pages-demo/actions/workflows/SphinxBuild.yml/badge.svg)](https://github.com/cybergis/github-pages-demo/actions/workflows/SphinxBuild.yml)
 [![pages-build-deployment](https://github.com/cybergis/github-pages-demo/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/cybergis/github-pages-demo/actions/workflows/pages/pages-build-deployment)
 
 **Author:** [Alexander Michels](https://alexandermichels.github.io/)
