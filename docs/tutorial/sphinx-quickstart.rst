@@ -103,9 +103,6 @@ The answers to the questions are (or see screenshot below):
     A screenshot of the sphinx-quickstart command
 
 
-
-**NOTE: Make or move `requirements.txt` to `docs/`** This will be necessary later.
-
 4. **`make html`**
 
 Now, we are going to make the HTML output for the `sphinx-quickstart` output. From within `docs/`:
