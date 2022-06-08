@@ -15,6 +15,7 @@
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
         <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
         <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.1/dist/embed-amd.js"></script>
@@ -106,7 +107,7 @@
 }
 </style>
 <section id="nbsphinx">
-<h1><span class="section-number">4. </span>nbsphinx<a class="headerlink" href="#nbsphinx" title="Permalink to this headline"></a></h1>
+<h1><span class="section-number">4. </span>nbsphinx<a class="headerlink" href="#nbsphinx" title="Permalink to this heading"></a></h1>
 <p>Often we create Jupyter Notebooks to demo the usage of our software and it’s convenient for those notebooks to serve as examples on our sites. For example, <a class="reference external" href="https://geopandas.org/en/stable/gallery/index.html">Geopandas example gallery does this</a> (<a class="reference external" href="https://github.com/geopandas/geopandas/blob/460d9403a0942e67b3f4f5e73aa7589febef84b3/doc/source/conf.py">see their conf.py</a>). This can be done with <a class="reference external" href="https://nbsphinx.readthedocs.io/en/0.8.8/">nbsphinx</a></p>
 <ol class="arabic">
 <li><p><strong>Notebooks within</strong> <code class="docutils literal notranslate"><span class="pre">docs/</span></code></p>
@@ -146,11 +147,12 @@
 <span class="o">========</span>
 
 <span class="o">..</span> <span class="n">toctree</span><span class="p">::</span>
-    <span class="p">:</span><span class="n">maxdepth</span><span class="p">:</span> <span class="mi">2</span>
+   <span class="p">:</span><span class="n">maxdepth</span><span class="p">:</span> <span class="mi">2</span>
 
-    <span class="n">notebooks</span><span class="o">/</span><span class="n">Test</span>
+   <span class="n">notebooks</span><span class="o">/</span><span class="n">Test</span>
 </pre></div>
 </div>
+<p>Remember to also add your examples page to the main toctree (in index.rst)!</p>
 </li>
 <li><p><strong>Make HTML and Check it Out</strong></p>
 <p>In the terminal, from <code class="docutils literal notranslate"><span class="pre">docs/</span></code> run the <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">html</span></code> command and check out the results.</p>

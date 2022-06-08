@@ -82,11 +82,11 @@ The sphinx `autodoc <https://www.sphinx-doc.org/en/master/usage/extensions/autod
    Your toc tree on index.rst should include reference.rst::
 
         .. toctree::
-            :maxdepth: 2
-            :caption: Contents:
+           :maxdepth: 2
+           :caption: Contents:
 
-            tutorial
-            reference
+           tutorial
+           reference
 
 #. **Make HTML**
 

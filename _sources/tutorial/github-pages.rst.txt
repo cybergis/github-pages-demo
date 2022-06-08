@@ -89,4 +89,4 @@ We are going to deploy our site to Github Pages using Github Actions.
 
         Github Pages page in the Settings of your repo.
 
-   Under the "Source" heading you will see a dropdown that says "None". Click on the dropdown and select "gh-pages" (this is where our workflow uploads the built site). For the folder dropdown, we can leave it as "/ (root)". When in doubt, you could check that branch to look for where your built site went. Click save
+   Under the "Source" heading you will see a dropdown that says "None". Click on the dropdown and select "gh-pages" (this is where our workflow uploads the built site). For the folder dropdown, we can leave it as "/ (root)". When in doubt, you could check that branch to look for where your built site went. Click save. It will take a couple of minutes for the 404 error to go away, but your page should eventually show up!

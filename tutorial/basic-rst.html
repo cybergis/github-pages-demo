@@ -15,6 +15,7 @@
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
         <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
         <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.1/dist/embed-amd.js"></script>
@@ -106,7 +107,7 @@
 }
 </style>
 <section id="intro-to-rst">
-<h1><span class="section-number">2. </span>Intro to RST<a class="headerlink" href="#intro-to-rst" title="Permalink to this headline"></a></h1>
+<h1><span class="section-number">2. </span>Intro to RST<a class="headerlink" href="#intro-to-rst" title="Permalink to this heading"></a></h1>
 <p>Sphinx can use markdown and ReSTructured Text. We will focus on ReSTructured text for now.</p>
 <ol class="arabic">
 <li><p><strong>Basic RST Syntax</strong></p>
@@ -127,8 +128,8 @@
 <li><p><strong>Brief Intro to TOC</strong></p>
 <p>When you open <code class="docutils literal notranslate"><span class="pre">docs/index.rst</span></code> you will see:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">toctree</span><span class="p">::</span>
-    <span class="p">:</span><span class="n">maxdepth</span><span class="p">:</span> <span class="mi">2</span>
-    <span class="p">:</span><span class="n">caption</span><span class="p">:</span> <span class="n">Contents</span><span class="p">:</span>
+   <span class="p">:</span><span class="n">maxdepth</span><span class="p">:</span> <span class="mi">2</span>
+   <span class="p">:</span><span class="n">caption</span><span class="p">:</span> <span class="n">Contents</span><span class="p">:</span>
 </pre></div>
 </div>
 <p>This is a toc (table of contents) tree directive. It links to other pages and defines the tree of pages within your site. <a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html">See the Sphinx “Directives” page for more info</a>. If you want to add pages to your site, you add them to a toctree somewhere.</p>
@@ -153,10 +154,10 @@ Welcome to mycybergis&#39;s documentation!
 ======================================
 
 .. toctree::
-    :maxdepth: 2
-    :caption: Contents:
+   :maxdepth: 2
+   :caption: Contents:
 
-    test
+   test
 
 
 
@@ -167,6 +168,10 @@ Indices and tables
 * :ref:`modindex`
 * :ref:`search`
 </pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><a class="reference external" href="https://docutils.sourceforge.io/0.4/docs/ref/rst/restructuredtext.html#whitespace">RST is very specific about whitespaces</a>. You want the “test” line to line up with the rest of the toctree directives! If you get errors about it still not being in the toctree, check that you’ve saved your file and that the “test” lines up with the other toctree directives.</p>
 </div>
 <p>Now, run <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">html</span></code> again, you should see “Test” in your contents. You may notice the sidebar change when click the Test page. Sometimes when you change the toctree, you need to wipe everything (<code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">clean</span></code>) and rebuild (<code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">html</span></code>) to fix the toctree/sidebar.</p>
 </li>

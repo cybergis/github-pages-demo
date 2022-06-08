@@ -15,6 +15,7 @@
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
         <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
         <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.1/dist/embed-amd.js"></script>
@@ -106,7 +107,7 @@
 }
 </style>
 <section id="deploying-to-github-pages">
-<h1><span class="section-number">5. </span>Deploying to Github Pages<a class="headerlink" href="#deploying-to-github-pages" title="Permalink to this headline"></a></h1>
+<h1><span class="section-number">5. </span>Deploying to Github Pages<a class="headerlink" href="#deploying-to-github-pages" title="Permalink to this heading"></a></h1>
 <p>We are going to deploy our site to Github Pages using Github Actions.</p>
 <ol class="arabic">
 <li><p><strong>Actions and Workflows</strong></p>
@@ -186,7 +187,7 @@ jobs:
 <p><span class="caption-text">Github Pages page in the Settings of your repo.</span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
-<p>Under the “Source” heading you will see a dropdown that says “None”. Click on the dropdown and select “gh-pages” (this is where our workflow uploads the built site). For the folder dropdown, we can leave it as “/ (root)”. When in doubt, you could check that branch to look for where your built site went. Click save</p>
+<p>Under the “Source” heading you will see a dropdown that says “None”. Click on the dropdown and select “gh-pages” (this is where our workflow uploads the built site). For the folder dropdown, we can leave it as “/ (root)”. When in doubt, you could check that branch to look for where your built site went. Click save. It will take a couple of minutes for the 404 error to go away, but your page should eventually show up!</p>
 </li>
 </ol>
 </section>
