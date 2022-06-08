@@ -39,10 +39,40 @@ Clone the repository and checkout the ``main`` branch:
         Switched to branch 'main'
         Your branch is up to date with 'origin/main'.
 
+2. **Install packages**
+Create a file called "requirements.txt" in `docs/` and copy/paste the following::
 
-2. **`sphinx-quickstart`**
+    folium
+    geopandas>=0.9.0
+    ipython
+    ipython_genutils
+    ipywidgets
+    markupsafe==2.0.1
+    myst-parser
+    nbsphinx
+    nbsphinx-link
+    shapely
+    sphinx
+    sphinx-markdown-builder
+    sphinx-rtd-theme
 
-Create a folder ``docs`` within the ``github-pages-demo`` folder:
+
+Once you have this file, install the packages with pip:
+
+   .. code-block:: console
+
+        > pip install -r requirements.txt
+
+We will use those packages later.
+
+    .. note::
+
+       The requirements.txt file needs to be in ``docs/`` folder of your repo for when we push everything to Github!
+
+
+3. **`sphinx-quickstart`**
+
+Create a folder ``docs`` within the ``github-pages-demo`` (the repo) folder:
 
    .. code-block:: console
 
@@ -72,30 +102,6 @@ The answers to the questions are (or see screenshot below):
 
     A screenshot of the sphinx-quickstart command
 
-
-3. **Install packages**
-Create a file called "requirements.txt" in `docs/` and copy/paste the following::
-
-    folium
-    geopandas>=0.9.0
-    ipython
-    ipython_genutils
-    ipywidgets
-    markupsafe==2.0.1
-    myst-parser
-    nbsphinx
-    nbsphinx-link
-    shapely
-    sphinx
-    sphinx-markdown-builder
-    sphinx-rtd-theme
-
-
-Once you have this file, install the packages with pip:
-
-   .. code-block:: console
-
-        > pip install -r requirements.txt
 
 
 **NOTE: Make or move `requirements.txt` to `docs/`** This will be necessary later.

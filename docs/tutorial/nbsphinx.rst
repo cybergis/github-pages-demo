@@ -48,9 +48,11 @@ Often we create Jupyter Notebooks to demo the usage of our software and it's con
         ========
 
         .. toctree::
-            :maxdepth: 2
+           :maxdepth: 2
 
-            notebooks/Test
+           notebooks/Test
+    
+   Remember to also add your examples page to the main toctree (in index.rst)!
 
 #. **Make HTML and Check it Out**
 

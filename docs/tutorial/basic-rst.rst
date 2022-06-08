@@ -32,8 +32,8 @@ Sphinx can use markdown and ReSTructured Text. We will focus on ReSTructured tex
    When you open ``docs/index.rst`` you will see::
 
         .. toctree::
-            :maxdepth: 2
-            :caption: Contents:
+           :maxdepth: 2
+           :caption: Contents:
 
    This is a toc (table of contents) tree directive. It links to other pages and defines the tree of pages within your site. `See the Sphinx "Directives" page for more info <https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html>`_. If you want to add pages to your site, you add them to a toctree somewhere.
 
@@ -65,10 +65,10 @@ Sphinx can use markdown and ReSTructured Text. We will focus on ReSTructured tex
         ======================================
 
         .. toctree::
-            :maxdepth: 2
-            :caption: Contents:
+           :maxdepth: 2
+           :caption: Contents:
             
-            test
+           test
 
 
 
@@ -79,6 +79,12 @@ Sphinx can use markdown and ReSTructured Text. We will focus on ReSTructured tex
         * :ref:`modindex`
         * :ref:`search`
 
+
+
+   .. note::
+
+        `RST is very specific about whitespaces <https://docutils.sourceforge.io/0.4/docs/ref/rst/restructuredtext.html#whitespace>`_. You want the "test" line to line up with the rest of the toctree directives! If you get errors about it still not being in the toctree, check that you've saved your file and that the "test" lines up with the other toctree directives.
+  
    Now, run ``make html`` again, you should see "Test" in your contents. You may notice the sidebar change when click the Test page. Sometimes when you change the toctree, you need to wipe everything (``make clean``) and rebuild (``make html``) to fix the toctree/sidebar.
 
 
